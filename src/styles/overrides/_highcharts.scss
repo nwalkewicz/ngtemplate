@@ -1,0 +1,66 @@
+.highcharts-container,
+.highcharts-container > svg {
+  width: 100%!important;
+
+  .highcharts-background {
+    display: none;
+  }
+}
+
+.highcharts-data-labels {
+  text {
+    font-family: Inter;
+    font-size: 12px!important;
+    fill: var(--clr-neutral-contrast)!important;
+    transition: fill 0.2s;
+  }
+  
+  .highcharts-text-outline {
+    stroke: var(--clr-neutral)!important;
+    stroke-width: 2px;
+    transition: stroke 0.2s;
+  }
+}
+
+.highcharts-tooltip-box {
+  fill: var(--clr-neutral);
+  transition: fill 0.2s;
+}
+
+.highcharts-tooltip-content {
+  color: var(--clr-neutral-contrast);
+  transition: fill 0.2s;
+}
+
+.highcharts-null-point {
+  fill: var(--clr-disabled);
+  transition: fill 0.2s;
+}
+
+.highcharts-point {
+  stroke: var(--clr-divider);
+  transition: stroke 0.2s;
+}
+
+.highcharts-mappoint-series > .highcharts-point {
+  fill: var(--clr-neutral-semicontrast);
+  transition: fill 0.2s;
+}
+
+.highcharts-title {
+  color: var(--clr-neutral-semicontrast)!important;
+  fill: var(--clr-neutral-semicontrast)!important;
+  transition: color 0.2s, fill 0.2s;
+}
+
+.highcharts-credits {
+  display: none;
+}
+
+g.highcharts-legend-item.highcharts-pie-series > text {
+  fill: var(--clr-neutral-contrast)!important;
+}
+
+g.highcharts-label.highcharts-tooltip > text {
+  fill: var(--clr-neutral-contrast)!important;
+}

@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  gap: 1rem;
+  padding-inline: 1rem;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-neutral);
+  border-bottom: 1px solid var(--clr-divider);
+  transition: background-color 0.2s, border-color 0.2s;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .logo {
+      fill: var(--clr-neutral-contrast);
+      transition: fill 0.2s;
+    }
+  }
+  
+  .right {
+    display: flex;
+    gap: 0.5rem;
+    
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
