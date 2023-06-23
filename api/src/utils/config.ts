@@ -17,7 +17,11 @@ switch (process.env.ENVIRONMENT.toLowerCase()) {
     production = false;
 }
 
-export default {
-  PORT: process.env.PORT !== undefined ? parseInt(process.env.PORT) : 3000,
-  production
-}
+let PORT: number;
+if (production) {
+  if (process.env.PORT !== undefined) {
+    PORT = parseInt(process.env.PORT);
+  } else PORT = 80;
+} else PORT = 3000;
+
+export default { production, PORT }
